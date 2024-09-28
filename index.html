@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Ledger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>General Ledger</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="ledgerTableBody"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total:</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Change Row</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="changeName" placeholder="Enter Name"></td>
+                    <td><input type="date" id="changeDate" placeholder="Enter Date"></td>
+                    <td><input type="number" id="changeAmount" placeholder="Enter Amount"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="changeButton">Change</button>
+
+        <h2>Add New Row</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="newName" placeholder="Enter Name"></td>
+                    <td><input type="date" id="newDate" placeholder="Enter Date"></td>
+                    <td><input type="number" id="newAmount" placeholder="Enter Amount"></td>
+                </tr>
+            </tbody>
+             
+        </table>
+        <button id="addButton">Add New</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
